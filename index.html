@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palidispari</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pali e dispari</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
+
+    <header>
+        <h1>Pali e dispari</h1>
+        <button id="reload">reset</button>
+    </header>
+
+    <div class="container">
+
+        <div id="snack1">
+            <h2>Palindroma</h2>
+            <div class="desc">Chiedere all’utente di inserire una parola
+                Creare una funzione per capire se la parola inserita è palindroma</div>
+            <div class="sn-inputs">
+                <input type="text" id="sn1-input" placeholder="Digita una parola">
+            </div>
+            <button id="sn1-btn">invia</button>
+            <p id="sn1-msg"></p>
+        </div>
+
+
+        <div id="snack2">
+            <h2>Pari e Dispari</h2>
+            <div class="desc">L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+                Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+                Sommiamo i due numeri
+                Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+                Dichiariamo chi ha vinto.</div>
+            <div class="sn-inputs">
+                <input type="number" id="sn2-input" placeholder="Digita un numero da 1 a 5">
+            </div>
+            <button id="sn2-btn">gioca</button>
+            <p id="sn2-msg"></p>
+        </div>
+
+    </div>   
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
