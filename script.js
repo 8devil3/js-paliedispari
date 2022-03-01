@@ -46,7 +46,6 @@ Dichiariamo chi ha vinto. */
 const numberChoosen = '2';
 
 
-
 if (!checkOddEven(numberChoosen)) {
     console.log('CPU WIN!');
 } else {
@@ -54,10 +53,13 @@ if (!checkOddEven(numberChoosen)) {
 }
 
 
-function checkOddEven(num) {
-    let rndmDigit = Math.floor(Math.random() * 5) + 1;
+function rndmDigit() {
+    return Math.floor(Math.random() * 5) + 1;;
+}
 
-    if ((num + rndmDigit) % 2 != 0) {
+function checkOddEven(num) {
+    
+    if ((num + rndmDigit()) % 2 != 0) {
         return false;
     } else {
         return true;
