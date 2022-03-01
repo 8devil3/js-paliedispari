@@ -21,11 +21,11 @@
 
         <div id="snack1">
             <h2>Palindroma</h2>
-            <div class="desc">Chiedere all’utente di inserire una parola
-                Creare una funzione per capire se la parola inserita è palindroma</div>
-            <div class="sn-inputs">
-                <input type="text" id="sn1-input" placeholder="Digita una parola">
-            </div>
+            <div class="desc">Chiedere all’utente di inserire una parola. Creare una funzione per capire se la parola
+                inserita è palindroma</div>
+
+            <input type="text" id="sn1-input" placeholder="Digita una parola">
+
             <button id="sn1-btn">invia</button>
             <p id="sn1-msg"></p>
         </div>
@@ -35,17 +35,25 @@
             <h2>Pari e Dispari</h2>
             <div class="desc">L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
                 Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-                Sommiamo i due numeri
-                Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+                Sommiamo i due numeri.
+                Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione).
                 Dichiariamo chi ha vinto.</div>
-            <div class="sn-inputs">
-                <input type="number" id="sn2-input" placeholder="Digita un numero da 1 a 5">
-            </div>
+
+                <label for="oddEven">Scegli "pari" o "dispari"</label>
+            <select id="sn2-select" name="oddEven">
+                <option value="even">pari</option>
+                <option value="odd">dispari</option>
+            </select>
+
+            <input type="number" id="sn2-input" placeholder="Digita un numero da 1 a 5">
+
+
             <button id="sn2-btn">gioca</button>
             <p id="sn2-msg"></p>
+            <p id="score"></p>
         </div>
 
-    </div>   
+    </div>
 
     <script src="js/main.js"></script>
 </body>
