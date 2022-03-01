@@ -7,9 +7,10 @@ const input1 = document.querySelector('#sn1-input');
 const msgHTML1 = document.querySelector("#sn1-msg");
 
 
+
 btnCheck.addEventListener('click', checkFinal);
 
-function checkFinal() {
+function checkFinal() { // check campi vuoti e output
     msgHTML1.classList.remove('true', 'false');
 
 
@@ -31,7 +32,7 @@ function checkFinal() {
 }
 
 
-function checkPalindrome(word) {
+function checkPalindrome(word) { // funzione di controllo dei palindromi, arg = string
     const arrWordCheck = [];
     
     for (let i = word.length - 1; i >= 0; i--) {
@@ -68,7 +69,7 @@ const msgHTMLscore = document.querySelector("#score");
 
 btnPlay.addEventListener('click', checkPlay);
 
-function checkPlay() {
+function checkPlay() { //check campi vuoti o errati e output
 
     msgHTML2.classList.remove('true', 'false');
     msgHTMLscore.innerHTML = '';
@@ -96,12 +97,12 @@ function checkPlay() {
     }
 }
 
-function rndmDigit() {
+function rndmDigit() {  // generatore numeri casuali da 1 a 5
     return Math.floor(Math.random() * 5) + 1;
 }
 
 
-function checkOddEven(num) {
+function checkOddEven(num) { // controllo la somma dell'input e del numero casuale se è pari o dispari, arg = int
 
     sum = num + rndmDigit(); // dichiaro la variabile "nuda" per recuperare il valore anche al di fuori della funzione
     
@@ -111,6 +112,14 @@ function checkOddEven(num) {
         return 'even';
     }
 }
+
+
+
+
+
+
+
+
 
 
 
